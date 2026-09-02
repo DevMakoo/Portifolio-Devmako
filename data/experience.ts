@@ -15,7 +15,7 @@ export const experience: TimelineEntry[] = [
   },
   {
     title: "Electromechanics Apprentice",
-    period: "2025 — Present",
+    period: "2025",
     org: "Suzano",
     description:
       "Apprenticeship combining technical training with hands-on experience in an industrial environment.",

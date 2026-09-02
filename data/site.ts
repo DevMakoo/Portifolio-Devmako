@@ -1,10 +1,9 @@
 export const site = {
   brand: "Devmako",
   role: "Software Developer",
-  email: "marcoa.u4564@gmail.com",
-  // TODO: replace with real profile URLs before going live.
-  github: "https://github.com/devmako",
-  linkedin: "https://www.linkedin.com/in/devmako",
+  email: "marco.teixeira.filho@outlook.com",
+  github: "https://github.com/DevMakoo",
+  linkedin: "https://www.linkedin.com/in/marco-moura01/",
   cvPath: "/cv.pdf",
 };
 
