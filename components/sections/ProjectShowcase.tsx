@@ -14,9 +14,11 @@ import { Reveal } from "@/components/ui/Reveal";
 export function ProjectShowcase({
   project,
   reverse,
+  total,
 }: {
   project: Project;
   reverse: boolean;
+  total: number;
 }) {
   const imageWrapRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLDivElement>(null);
@@ -73,9 +75,14 @@ export function ProjectShowcase({
 
       <div className={cn(reverse && "md:order-1")}>
         <Reveal>
-          <span className="font-mono text-xs text-muted-dim">
-            {project.index} / 03
-          </span>
+          <div className="flex items-center gap-3">
+            <span className="font-mono text-xs text-muted-dim">
+              {project.index} / {String(total).padStart(2, "0")}
+            </span>
+            <span className="font-mono text-xs uppercase tracking-[0.15em] text-accent">
+              {project.category}
+            </span>
+          </div>
         </Reveal>
         <Reveal delay={0.05}>
           <h3 className="mt-3 text-3xl sm:text-4xl font-semibold tracking-tight">

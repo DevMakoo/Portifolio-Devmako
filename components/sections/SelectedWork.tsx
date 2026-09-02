@@ -8,12 +8,17 @@ export function SelectedWork() {
       <div className="mx-auto max-w-7xl px-6 md:px-10">
         <SectionHeading
           title="Selected Work"
-          subtitle="Projects built across design, frontend engineering, backend systems, and interactive experiences."
+          subtitle="A closer look at frontend and creative engineering work — more projects in progress."
         />
 
         <div className="mt-20 flex flex-col gap-24 md:gap-32">
           {projects.map((project, i) => (
-            <ProjectShowcase key={project.id} project={project} reverse={i % 2 === 1} />
+            <ProjectShowcase
+              key={project.id}
+              project={project}
+              reverse={i % 2 === 1}
+              total={projects.length}
+            />
           ))}
         </div>
       </div>
